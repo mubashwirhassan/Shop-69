@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary-dark: #1a1a2e;
+  --secondary-dark: #16213e;
+  --accent-primary: #ffc107;
+  --accent-secondary: #6c5ce7;
+  --success: #27ae60;
+  --danger: #e74c3c;
+  --text-light: #ecf0f1;
+  --text-secondary: #95a5a6;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--accent-primary) !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: var(--text-light) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--accent-primary) !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: var(--accent-primary) !important;
+  border-bottom: 2px solid var(--accent-primary);
+}
+
+/* Hero Banner */
+.bg-gradient {
+  background: linear-gradient(
+    135deg,
+    #6c5ce7 0%,
+    var(--secondary-dark) 100%
+  );
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  animation: slideInLeft 0.8s ease;
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.hero-btn {
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+}
+
+.jersey-card {
+  background: linear-gradient(135deg, #6c5ce7 0%, #0984e3 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.jersey-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.4);
+}
+
+.jersey-img {
+  transition: transform 0.3s ease;
+}
+
+.jersey-card:hover .jersey-img {
+  transform: scale(1.05);
+}
+
+/* Category Tabs */
+.category-tabs {
+  background: var(--primary-dark);
+}
+
+.category-tab {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.category-tab:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+}
+
+.btn-warning {
+  background-color: var(--accent-primary) !important;
+  border-color: var(--accent-primary) !important;
+  color: #000 !important;
+  font-weight: 600;
+}
+
+.btn-warning:hover {
+  background-color: #ffb300 !important;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+/* Product Card */
+.product-card {
+  background: var(--secondary-dark) !important;
+  border: 1px solid rgba(255, 193, 7, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
+  transform: translateY(-5px);
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+.product-img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.card-subtitle {
+  color: var(--accent-primary);
+}
+
+/* Grid Layout */
+.product-grid {
+  background: var(--primary-dark);
+  min-height: 600px;
+}
+
+.product-grid h2 {
+  border-left: 4px solid var(--accent-primary);
+  padding-left: 15px;
+}
+
+/* Buttons */
+.btn {
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-light {
+  color: var(--text-light);
+  border-color: var(--text-secondary);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Forms */
+.form-control,
+.form-select {
+  background-color: var(--secondary-dark) !important;
+  border-color: rgba(255, 193, 7, 0.2) !important;
+  color: var(--text-light) !important;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--secondary-dark) !important;
+  border-color: var(--accent-primary) !important;
+  color: var(--text-light) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25) !important;
+}
+
+.form-label {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+  border-top: 1px solid rgba(255, 193, 7, 0.1);
+}
+
+footer h5 {
+  color: var(--accent-primary);
+  font-weight: 700;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--accent-primary) !important;
+  transform: translateX(3px);
+}
+
+/* Badge */
+.badge {
+  font-weight: 600;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: var(--secondary-dark) !important;
+  border: 1px solid var(--accent-primary) !important;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  color: var(--text-light) !important;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: var(--accent-primary) !important;
+  color: #000 !important;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Utilities */
+.text-primary-accent {
+  color: var(--accent-primary);
+}
+
+.bg-secondary-dark {
+  background-color: var(--secondary-dark);
+}
+
+.hover-shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem !important;
+  }
+
+  .product-grid h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-tabs {
+    margin-bottom: 20px;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
