@@ -1,7 +1,7 @@
 {
   "name": "shop-69",
   "version": "1.0.0",
-  "description": "Jersey E-Commerce Store - Full Stack with Next.js",
+  "description": "Jersey E-Commerce Store",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,7 +14,7 @@
     "next": "^14.0.0",
     "mongoose": "^8.0.0",
     "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.1.2",
+    "jsonwebtoken": "^9.0.2",
     "axios": "^1.6.0",
     "dotenv": "^16.3.1",
     "stripe": "^14.0.0"
